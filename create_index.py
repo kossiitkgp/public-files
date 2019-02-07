@@ -21,7 +21,7 @@ for path, dirs, files in os.walk("."):
 def create_html(header, list_of_paths):
     li_elements = ""
     for path in list_of_paths:
-        li_elements += f'<li><a href="{path}">{path[1:]}</li>\n'
+        li_elements += f'<li><a href="{path[1:]}">{path}</li>\n'
 
     html = f"""
     <body>
