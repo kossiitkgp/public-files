@@ -21,7 +21,7 @@ for path, dirs, files in os.walk("."):
 def create_html(header, list_of_paths):
     li_elements = ""
     for path in list_of_paths:
-        li_elements += f'<li><a href="{path[1:]}">{path}</li>\n'
+        li_elements += f'<li><a href="{path}">{path}</li>\n'
 
     html = f"""
     <body>
@@ -52,7 +52,7 @@ for _path in all_dirs.keys():
                 link_is_included = False
                 continue
         if link_is_included:
-            list_of_paths.append(path + "/" + link)
+            list_of_paths.append(link)
     html = create_html(path, list_of_paths)
     index_path = cwd + path + "/index.html"
     with open(index_path, "w") as index:
