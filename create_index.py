@@ -1,4 +1,4 @@
-# Use Python 3
+#!/usr/bin/python3
 import os
 import glob
 
