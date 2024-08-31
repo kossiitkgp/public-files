@@ -1,6 +1,6 @@
 # public-files
 
-https://kossiitkgp.org/public-files/
+https://certi.kossiitkgp.org/public-files/
 
 A Repository to host public files from our domain for validation (e.g. Certificates)
 
